@@ -1,3 +1,4 @@
+
 function sumOfThreeDice() {
     rolls = [0, 0, 0, 0,].map((x) => Math.ceil(Math.random() * 6));
     rolls.sort();
@@ -32,12 +33,12 @@ function printNumber0(number) {
     var placeholder = document.getElementById('placeholder5');
     placeholder.innerHTML = number;
   }
-var button = document.getElementById('button');
+var test = document.getElementById('button');
 
-button.onclick = function() {
+test.onclick = function() {
     let numbers = [sumOfThreeDice(), sumOfThreeDice(), sumOfThreeDice(), sumOfThreeDice(), sumOfThreeDice(), sumOfThreeDice()]
-  var result0 = numbers[0]
-  var result1 = numbers[1]
+    var result0 = numbers[0]
+    var result1 = numbers[1]
     var result2 = numbers[2]
     var result3 = numbers[3]
     var result4 = numbers[4]
@@ -48,4 +49,17 @@ button.onclick = function() {
     printNumber3(result3);
     printNumber4(result4);
     printNumber5(result5);
+    document.getElementById("continue").removeAttribute('hidden')
 };
+
+var cont = document.getElementById('continue');
+
+// Commented out functions for showing stats
+cont.onclick = function() {
+document.getElementById("stats0").removeAttribute('hidden')
+    document.getElementById("stats1").removeAttribute('hidden')
+    document.getElementById("stats2").removeAttribute('hidden')
+    document.getElementById("stats3").removeAttribute('hidden')
+    document.getElementById("stats4").removeAttribute('hidden')
+    document.getElementById("stats5").removeAttribute('hidden')
+}

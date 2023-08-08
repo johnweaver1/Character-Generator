@@ -8,19 +8,44 @@
     <link rel="stylesheet" type="text/css" href ="./assets/style.css" />
 </head>
 <body>
-    <p class="placeholder" id="placeholder0">
-  </p>
-  <p class="placeholder" id="placeholder1">
-</p>
-<p class="placeholder" id="placeholder2">
-</p>
-<p class="placeholder" id="placeholder3">
-</p>
-<p class="placeholder" id="placeholder4">
-</p>
-<p class="placeholder" id="placeholder5">
-</p>
-    <button id="button">Roll Dice</button>
+    <button id="button" onclick="function1()">Roll Dice</button>
+    <div id="sortable">
+    <div class = "box">
+            <p class="placeholder" id="placeholder0"></p>
+            <p class="stats" hidden id="stats0">Strength</p>
+    </div>
+    <div class = "box">
+        <p class="placeholder" id="placeholder1"></p>
+            <p class="stats" hidden id="stats1">Dexterity</p>
+    </div>
+    <div class = "box">
+        <p class="placeholder" id="placeholder2"></p>
+        <p class="stats" hidden id="stats2">Constitution</p>
+    </div>
+    <div class = "box">
+        <p class="placeholder" id="placeholder3"></p>
+        <p class="stats" hidden id="stats3">Intelligence</p>
+    </div>
+    <div class = "box">
+        <p class="placeholder" id="placeholder4"></p>
+        <p class="stats" hidden id="stats4">Wisdom</p>
+    </div>
+    <div>
+        <p class="placeholder" id="placeholder5"></p>
+        <p class="stats" hidden id="stats5">Charisma</p>
+    </div>
+</div>
+<button hidden id="continue">Continue</button>
+</ul>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/script.js"></script>
+    <script>
+        $(function () {
+          $('#sortable').sortable();
+          $('#sortable').disableSelection();
+        });
+      </script>
+    
 </body>
 </html>
