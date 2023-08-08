@@ -8,44 +8,116 @@
     <link rel="stylesheet" type="text/css" href ="./assets/style.css" />
 </head>
 <body>
-    <button id="button" onclick="function1()">Roll Dice</button>
-    <div id="sortable">
+    <div class="center">
+        <button id="button">Roll for Stats!</button>
+    </div>
+  </div>
     <div class = "box">
+        <div class="holder" id="sortable-0">
             <p class="placeholder" id="placeholder0"></p>
-            <p class="stats" hidden id="stats0">Strength</p>
+            <div class="dropdown">
+                <select name="stats" id="stats">
+                    <option>Strength</option>
+                    <option>Dexterity</option>
+                    <option selected="selected">Constitution</option>
+                    <option>Intelligence</option>
+                    <option>Wisdom</option>
+                    <option>Charisma</option>
+                </select>
+            </div>
+        </div>
     </div>
     <div class = "box">
-        <p class="placeholder" id="placeholder1"></p>
-            <p class="stats" hidden id="stats1">Dexterity</p>
+        <div class="holder" id="sortable-1">
+            <p class="placeholder" id="placeholder1"></p>
+            <div class="dropdown">
+                <select name="stats" id="stats">
+                    <option>Strength</option>
+                    <option>Dexterity</option>
+                    <option selected="selected">Constitution</option>
+                    <option>Intelligence</option>
+                    <option>Wisdom</option>
+                    <option>Charisma</option>
+                </select>
+            </div>
+        </div>
     </div>
     <div class = "box">
-        <p class="placeholder" id="placeholder2"></p>
-        <p class="stats" hidden id="stats2">Constitution</p>
+        <div class="holder" id="sortable-2">
+            <p class="placeholder" id="placeholder2"></p>
+            <div class="dropdown">
+                <select name="stats" id="stats">
+                    <option>Strength</option>
+                    <option>Dexterity</option>
+                    <option selected="selected">Constitution</option>
+                    <option>Intelligence</option>
+                    <option>Wisdom</option>
+                    <option>Charisma</option>
+                </select>
+            </div>
+        </div>
     </div>
     <div class = "box">
-        <p class="placeholder" id="placeholder3"></p>
-        <p class="stats" hidden id="stats3">Intelligence</p>
+        <div class="holder" id="sortable-3">
+            <p class="placeholder" id="placeholder3"></p>
+            <div class="dropdown">
+                <select name="stats" id="stats">
+                    <option>Strength</option>
+                    <option>Dexterity</option>
+                    <option selected="selected">Constitution</option>
+                    <option>Intelligence</option>
+                    <option>Wisdom</option>
+                    <option>Charisma</option>
+                </select>
+            </div>
+        </div>
     </div>
     <div class = "box">
-        <p class="placeholder" id="placeholder4"></p>
-        <p class="stats" hidden id="stats4">Wisdom</p>
+        <div class="holder" id="sortable-4">
+            <p class="placeholder" id="placeholder4"></p>
+            <div class="dropdown">
+                <select name="stats" id="stats">
+                    <option>Strength</option>
+                    <option>Dexterity</option>
+                    <option selected="selected">Constitution</option>
+                    <option>Intelligence</option>
+                    <option>Wisdom</option>
+                    <option>Charisma</option>
+                </select>
+            </div>
+        </div>
     </div>
-    <div>
-        <p class="placeholder" id="placeholder5"></p>
-        <p class="stats" hidden id="stats5">Charisma</p>
+    <div class = "box">
+        <div class="holder" id="sortable-5">
+            <p class="placeholder" id="placeholder5"></p>
+            <div class="dropdown">
+                <select name="stats" id="stats">
+                    <option>Strength</option>
+                    <option>Dexterity</option>
+                    <option selected="selected">Constitution</option>
+                    <option>Intelligence</option>
+                    <option>Wisdom</option>
+                    <option>Charisma</option>
+                </select>
+            </div>
+        </div>
     </div>
-</div>
 <button hidden id="continue">Continue</button>
 </ul>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="./assets/script.js"></script>
     <script>
-        $(function () {
-          $('#sortable').sortable();
-          $('#sortable').disableSelection();
-        });
+
       </script>
     
 </body>
 </html>
+
+
+
+<!--<p class="stats" hidden id="stats5">Charisma</p> 
+    <p class="stats" hidden id="stats4">Wisdom</p>
+<p class="stats" hidden id="stats3">Intelligence</p>
+ <p class="stats" hidden id="stats2">Constitution</p>
+<p class="stats" hidden id="stats1">Dexterity</p> 
+<p class="stats" hidden id="stats0">Strength</p>-->

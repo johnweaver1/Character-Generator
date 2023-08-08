@@ -1,11 +1,11 @@
-
+//function for creating 4d6 rolls and dropping the lowest.
+var statNames = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
 function sumOfThreeDice() {
     rolls = [0, 0, 0, 0,].map((x) => Math.ceil(Math.random() * 6));
     rolls.sort();
     sum = rolls[1] + rolls[2] + rolls[3];
     return sum;
 }
-
 // const numbers = [sumOfThreeDice(), sumOfThreeDice(), sumOfThreeDice(), sumOfThreeDice(), sumOfThreeDice(), sumOfThreeDice()]
 //console.log(numbers);
 
@@ -63,3 +63,6 @@ document.getElementById("stats0").removeAttribute('hidden')
     document.getElementById("stats4").removeAttribute('hidden')
     document.getElementById("stats5").removeAttribute('hidden')
 }
+$( function() {
+  $( "#stats" ).selectmenu();
+} );
